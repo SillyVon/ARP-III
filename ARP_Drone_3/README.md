@@ -165,20 +165,21 @@ Opens shared memory (SHM_ID) and semaphores (SEM_PATH_1 and SEM_PATH_2) created 
 
 To compile and run the project, open a terminal and execute the following command:
 ```console
-bash run.sh
+make
 ```
 This script compiles the source files (server.c, main.c, and watchdog.c) using GCC with the necessary flags and then executes the compiled server binary.
 
 Using the Makefile
 
-Alternatively, you can use the Makefile located in the root directory of the project. Open a terminal and run the following commands:
+After each execution of the program, it's recommended to clean the logs using the following command:
 ```console
-make
+make refresh
 ```
 This will compile all source files and generate the corresponding binaries in the bin directory. After compilation, you can run the server using:
 ```console
 ./bin/server
 ```
+
 # Installation
 
 Ensure that you have the required dependencies installed on your system (details in the Dependencies section).
